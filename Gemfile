@@ -10,8 +10,9 @@ gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 
+# Use devise for flexible authentication for Rails application based on Warden
 gem 'devise'
-
+# Use token authentication system with 'devise' gem
 gem 'simple_token_authentication', '~> 1.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
