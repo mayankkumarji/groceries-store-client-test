@@ -8,6 +8,6 @@ class Product < ApplicationRecord
     query += " AND " if query.present? && params[:name].present?
     query += "name like '%#{params[:name]}%'" if params[:name].present?
 
-    where(query)
+    where(query).paginate(page: params[:page])
   end
 end

@@ -47,3 +47,6 @@ end
 gem 'rubocop', require: false
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+# will_paginate is a pagination library
+gem 'will_paginate', '~> 3.3'

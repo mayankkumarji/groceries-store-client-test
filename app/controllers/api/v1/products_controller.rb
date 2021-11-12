@@ -6,8 +6,12 @@ module Api
       # 1. `categories` must be comma seperated ids
       # 2. `name` product name
       def index
+        params[:page] = 1 unless params[:page].present?
         products = Product.search(params)
-        render json: { data: ActiveModelSerializers::SerializableResource.new(products, each_serializer: ProductSerializer) }
+        render json: {
+          data: ActiveModelSerializers::SerializableResource.new(products, each_serializer: ProductSerializer),
+          total_pages: products.total_pages
+        }
       end
     end
   end
