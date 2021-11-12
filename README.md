@@ -35,7 +35,7 @@ Before you get started, the following needs to be installed:
     cd groceries-store
     ```
 
-1.  Install the required gems by running the following command in the project root directory:
+2.  Install the required gems by running the following command in the project root directory:
 
     ```bash
     bundle install
@@ -49,27 +49,27 @@ Before you get started, the following needs to be installed:
     bundle install
     ```
 
-1.  Create a `database.yml` file by copying the example database configuration:
+3.  Create a `database.yml` file by copying the example database configuration:
 
     ```bash
     cp config/example.database.yml config/database.yml
     ```
 
-1.  Add your database configuration details to `config/database.yml`. You will probably need to fill the username and password for the database(s).
+4.  Add your database configuration details to `config/database.yml`. You will probably need to fill the username and password for the database(s).
 
-1.  Create and initialize the database:
+5.  Create and initialize the database:
 
     ```bash
     bundle exec rake db:create db:seed
     ```
 
-1.  Start the development server:
+6.  Start the development server:
 
     ```bash
     rails s
     ```
 
-1.  Api Documentation: Api documentation can be found inside the project directory. File name is Groceries Store.postman_collection.json
+7.  Api Documentation: Api documentation can be found inside the project directory. File name is Groceries Store.postman_collection.json
 
 ### How to run the test suite
 
