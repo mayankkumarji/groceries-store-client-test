@@ -69,9 +69,12 @@ Before you get started, the following needs to be installed:
     rails s
     ```
 
+1.  Api Documentation: Api documentation can be found inside the project directory. File name is Groceries Store.postman_collection.json
+
+### How to run the test suite
+
+Specs need to be added as an improvement.
+
 
 Congratulations! Groceries store should now be up and running for development purposes. Open a browser and go to the server URL (e.g. http://localhost:3000)
 
-
-1. Api Documentation:
-    Api documentation can be found inside the project directory. File name is Groceries Store.postman_collection.json
